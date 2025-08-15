@@ -1,0 +1,14 @@
+
+=== Latency Summary (ms) ===
+Network  xss      n      avg_ms  median_ms  p95_ms   min_ms  max_ms  
+-------  -------  -----  ------  ---------  -------  ------  --------
+direct   without  10001  443.68  289.00     1353.00  235.00  7042.00 
+direct   with     10001  307.08  285.00     409.00   236.00  1984.00 
+proxy    without  10001  406.99  343.00     875.00   241.00  2666.00 
+proxy    with     10001  671.12  363.00     2244.00  252.00  13293.00
+
+=== Average Overheads (ms) ===
+Proxy overhead (no xss):   -36.69
+Proxy overhead (with xss): 364.03
+xss overhead (direct):     -136.59
+xss overhead (proxy):      264.13
